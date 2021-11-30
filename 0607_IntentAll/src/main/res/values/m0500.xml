@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0500_t001">公斤(KG):</string>
+    <string name="zero">0</string>
+    <string name="hint">請輸入數字</string>
+    <string name="m0500_b001">執行換算</string>
+    <string name="m0500_t002">磅(lb):</string>
+    <string name="m0500_t004">林建誠</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="diminseButton">10dp</dimen>
+    <dimen name="top1">0dp</dimen>
+    <dimen name="fonsize1">20sp</dimen>
+    <dimen name="end1">30dp</dimen>
+    <dimen name="buttonsize">120dp</dimen>
+    <dimen name="start">30dp</dimen>
+    <dimen name="fonsize2">20sp</dimen>
+</resources>

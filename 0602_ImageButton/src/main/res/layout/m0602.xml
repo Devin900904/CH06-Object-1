@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back07"
+    android:orientation="vertical"
+    tools:context=".M0601">
+
+    <TextView
+        android:id="@+id/m0602_t001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/p10"
+        android:layout_marginTop="@dimen/p10"
+        android:layout_marginEnd="@dimen/p10"
+        android:layout_marginBottom="@dimen/p10"
+        android:background="@color/Yellow"
+        android:gravity="center"
+        android:text="@string/m0500_t001"
+        android:textColor="@color/Navy"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m0602_t002"
+        android:layout_width="@dimen/buttonsize"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0602_t001"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/start"
+        android:layout_marginTop="@dimen/diminseButton"
+        android:background="@color/Aqua"
+        android:gravity="center"
+        android:text="@string/m0602_t002"
+        android:textColor="@color/Black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m0602_t003"
+        android:layout_width="@dimen/buttonsize"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0602_t001"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/diminseButton"
+        android:layout_marginEnd="@dimen/end1"
+        android:background="@color/Aqua"
+        android:gravity="center"
+        android:text="@string/m0602_t003"
+        android:textColor="@color/Black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/m0602_b001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0602_t003"
+        android:layout_alignEnd="@+id/m0602_t003"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginEnd="@dimen/diminseButton"
+        android:background="#00000000"
+        android:src="@drawable/scissors"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/m0602_b002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0602_b001"
+        android:layout_alignEnd="@+id/m0602_t003"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginEnd="@dimen/diminseButton"
+        android:background="#00000000"
+        android:src="@drawable/stone"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/m0602_b003"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0602_b002"
+        android:layout_alignEnd="@+id/m0602_t003"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginEnd="@dimen/diminseButton"
+        android:background="#00000000"
+        android:src="@drawable/net"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/m0602_c001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/m0602_t002"
+        android:layout_alignTop="@+id/m0602_b002"
+        android:layout_marginStart="@dimen/Margins"
+        android:layout_marginTop="@dimen/top1"
+        android:background="#00000000"
+        android:src="@drawable/scissors"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/m0602_s001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0602_b003"
+        android:layout_alignStart="@+id/m0602_t002"
+        android:layout_marginStart="@dimen/Margins"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginEnd="@dimen/p20"
+        android:background="@color/Silver"
+        android:text="@string/m0602_s001"
+        android:textColor="@color/Maroon"
+        android:textSize="@dimen/fonsize2" />
+
+    <TextView
+        android:id="@+id/m0602_f000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0602_s001"
+        android:layout_alignStart="@+id/m0602_t002"
+        android:layout_marginStart="@dimen/Margins"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginEnd="@dimen/p20"
+        android:background="@color/White"
+        android:text="@string/m0602_f000"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/fonsize1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/p20"
+        android:layout_marginBottom="@dimen/p20"
+        android:text="@string/myname"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/fonsize1" />
+
+</RelativeLayout>

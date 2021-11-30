@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0000_b0500">5.0Convert單位換算</string>
+    <string name="m0000_b0501">5.1 MarriSug婚姻建議</string>
+    <string name="m0000_b0502">5.2 MarriSug婚姻建議(全)</string>
+    <string name="m0000_b0504">5.4 HobbySel多重選擇</string>
+    <string name="m0000_b0505">5.5 AutoComplete自動輸入文字</string>
+
+
+</resources>
+    <!--    <string name="m0607_b002">5.1 MarriSug</string>-->
+    <!--    <string name="m0607_b005">5.5AutoComplete自動輸入文字</string>-->
+    <!--    <string name="m0607_b004">5.3HobbySel喜好選擇</string>-->
+    <!--    <string name="m0607_b003">5.2MarriSug婚姻建議(全)</string>-->
+    <!--    <string name="m0607_b007">5.1MarriSug婚姻建議</string>-->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0500_t001">猜拳遊戲</string>
+    <string name="m0605_t002">電腦出拳</string>
+
+    <string name="m0605_t003">玩家出拳</string>
+    <string name="m0605_b001">剪刀</string>
+    <string name="m0605_b002">石頭</string>
+    <string name="m0605_b003">布</string>
+    <string name="m0605_t004">剪刀</string>
+    <string name="m0605_s001">你選擇</string>
+    <string name="m0605_f000">判定輸贏</string>
+    <string name="m0604_b004">完全自訂義</string>
+
+
+    <string name="m0605_f001">恭喜，你贏了！</string>
+    <string name="m0605_f002">很可惜，你輸了！</string>
+    <string name="m0605_f003">雙方平手！</string>
+    <string name="m0605_s001comp">電腦選:</string>
+    <string name="m0605_t007">雙方平手</string>
+    <string name="m0605_t006">雙方平手</string>
+    <string name="m0605_t008">恭喜你贏了</string>
+    <string name="m0605_t009">恭喜你輸了</string>
+
+</resources>
