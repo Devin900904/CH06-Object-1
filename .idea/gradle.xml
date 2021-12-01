@@ -19,6 +19,10 @@
             <option value="$PROJECT_DIR$/0605_GameToast" />
             <option value="$PROJECT_DIR$/0606_Game_final" />
             <option value="$PROJECT_DIR$/0608_calculator" />
+            <option value="$PROJECT_DIR$/0608a_getIdentifer" />
+            <option value="$PROJECT_DIR$/0608b_ScrollView" />
+            <option value="$PROJECT_DIR$/0609_IndexMicro" />
+            <option value="$PROJECT_DIR$/6.8bGetIdentifier" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

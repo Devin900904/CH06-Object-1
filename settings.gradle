@@ -19,3 +19,7 @@ include ':0604_Toast_Type'
 include ':0606_Game_final'
 
 include ':0608_calculator'
+include ':6.8bGetIdentifier'
+include ':0608b_ScrollView'
+include ':0608a_getIdentifer'
+include ':0609_IndexMicro'
