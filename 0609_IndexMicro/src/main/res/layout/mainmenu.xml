@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back02"
+    android:orientation="vertical"
+    tools:context=".Menu01">
+
+    <ScrollView
+        android:id="@+id/scr01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/p10"
+        android:paddingTop="@dimen/p10"
+        android:paddingEnd="@dimen/p10">
+
+        <LinearLayout
+            android:id="@+id/lay02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarStyle="outsideOverlay">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/myname"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/objT001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/m05"
+        android:textColor="@color/Navy"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+</LinearLayout>
