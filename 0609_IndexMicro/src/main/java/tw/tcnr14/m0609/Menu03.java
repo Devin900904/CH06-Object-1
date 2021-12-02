@@ -1,8 +1,5 @@
 package tw.tcnr14.m0609;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -15,11 +12,15 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Menu01 extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Menu03 extends AppCompatActivity {
 
     private LinearLayout mlay02;
     private TextView myname;
     private TextView tv;
+    private String mode_title;
+    private Intent intent01 = new Intent();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +36,8 @@ public class Menu01 extends AppCompatActivity {
         //-----------------------------------------------------
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-
-                            //        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
-                           //                LayoutParams.MATCH_PARENT, 180);
+//        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+//                LayoutParams.MATCH_PARENT, 180);
         lp.setMargins(0, 0, 0, 0); // 設定物件之間距離
 
         // 動態調整高度 抓取使用裝置尺寸
@@ -64,10 +64,13 @@ public class Menu01 extends AppCompatActivity {
         // ----
         TextView objt001 = (TextView) findViewById(R.id.objT001); // 取出參考物件
         objt001.setVisibility(View.GONE); // 設定參考物件隱藏不佔空間
+        // 設定class標題
+        Intent intent01 = this.getIntent();
+        mode_title = intent01.getStringExtra("subname");
+        this.setTitle(this.getResources().getIdentifier(mode_title, "string", getPackageName()));
         // ----
-
         try {
-            for (int i = 5; i <= 20; i++) {  // 設定走20圈, 遇到沒資料自動停止.
+            for (int i = 1; i <= 20; i++) {  // 設定走20圈, 遇到沒資料自動停止.
                 tv = new TextView(this); // tv 繼承TextView
                 tv.setId(i); // 寫入配置碼ID 代號
                 // %02d執行十進制整數轉換d，格式化補零，寬度為2。 因此，一個int參數，它的值是7
@@ -75,7 +78,7 @@ public class Menu01 extends AppCompatActivity {
                 String microNo = String.format("%02d", i);
 //                Log.d(TAG,             microNo                );
                 // 取得string 裏頭相對應的ID 碼
-                int id = getResources().getIdentifier("m" + microNo, "string", getPackageName());
+                int id = getResources().getIdentifier( mode_title+ microNo, "string", getPackageName());
                 // --------------------------------------------
 
                 // --------------------------------------------
@@ -91,30 +94,23 @@ public class Menu01 extends AppCompatActivity {
                         objt001.getPaddingBottom());      // 設定文字內間距 left,top,right,bottom
                 mlay02.addView(tv);                             // 顯示textview物件
 
-
                     tv.setOnClickListener(clkOn);
             }
-
         } catch (Exception e) {
             return; //for迴圈異常中斷到此跳出
         }
     }
 
-    private Intent intent01 = new Intent();
-    private View.OnClickListener clkOn = new View.OnClickListener() {
+
+    private View.OnClickListener clkOn =new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             int ii = (v.getId()); // 下層巨集前兩碼
             String mm = String.format("%02d", ii);
-            String subname = "m" + mm;
-
-            // ------------------------------------------
-//            Log.d(TAG, "subname:"+subname);
-//            intent01.putExtra("sel", ii);
-            intent01.putExtra("subname", subname); // subname => m05,m06,m07....m17
-            intent01.setClass(Menu01.this, Menu02.class);
+            String theme = "mode_bile" + mm;
+            intent01.putExtra("subname", theme); // subname => m05,m06,m07....m17
+//            intent01.setClass(Menu03.this, Menu04.class);
             startActivity(intent01);
-
 
         }
     };
@@ -124,7 +120,6 @@ public class Menu01 extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.m0609, menu);
         return true;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -147,9 +142,7 @@ public class Menu01 extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
+    } @Override
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(),"進用返回建",Toast.LENGTH_LONG).show();
 //        super.onBackPressed();

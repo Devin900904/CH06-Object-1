@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">6.9 Index巨集</string>
     <string name="myname">14林建誠</string>
+    <string name="action_settings">返回</string>
+    <string name="m_about">關於我</string>
 </resources>

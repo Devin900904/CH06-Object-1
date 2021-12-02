@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/p10"
         android:paddingTop="@dimen/p10"
-        android:paddingEnd="@dimen/p10">
+        android:paddingEnd="@dimen/p10"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:id="@+id/lay02"
